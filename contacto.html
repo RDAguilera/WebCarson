@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Dos Columnas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            width: 80%; /* Ajusta el ancho de la página según tus necesidades */
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .left-column {
+            text-align: center;
+        }
+
+        .right-column {
+            text-align: justify;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="column left-column">
+        <img src="https://scontent.fcor4-1.fna.fbcdn.net/v/t39.30808-6/346279535_608611371321925_2614596696445618796_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeGTAZrm48pYX-R2IwP7xklQJrMHDMb3q8ImswcMxverwg3zfdm-5Ivk73jeJJjyWlA&_nc_ohc=cE7002zoMXUAX_rw2Pc&_nc_ht=scontent.fcor4-1.fna&oh=00_AfAUfCpU7IKxotQgpMawZYP0Xw9SuzcaHfHwH7ky2ZzFIA&oe=658565D9" alt="Alumnos en el patio de la instiución">
+    </div>
+    <div class="column right-column">
+        <p>
+            Tu texto va aquí. Puedes escribir varias líneas y el texto se justificará automáticamente en esta columna.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
