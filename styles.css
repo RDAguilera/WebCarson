@@ -100,7 +100,7 @@ nav a {
 
 .hero {
     position: relative;
-    background: url('imagenes/Escuela.jpg') center/cover no-repeat; 
+    background: url('Imagenes/Escuela.jpg') center/cover no-repeat; 
     height: 400px; /* Ajusta la altura según tus necesidades */    
     text-align: center;
 }
