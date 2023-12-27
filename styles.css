@@ -7,7 +7,7 @@
     --orange:rgb(240, 225, 200);
     --blanco:#ffff    
   }
-* Estilos generales */
+/* Estilos generales */
 body {
     font-family: 'Open sans' , Helvetica , Georgia;
     margin: 0;
@@ -138,10 +138,12 @@ nav a {
     height: 50px;
     color: var(--orange);    
 }
+
 .Pie p{
     margin-top: 0;
     padding: 16px;
 }
+
 button {
     padding: 12px 20px;
     /*margin-top: 15%;*/
