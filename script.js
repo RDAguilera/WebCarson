@@ -1,9 +1,9 @@
 
   // Definir los textos asociados a cada botón
   var textos = {
-      'texto1': 'En Carson reconocemos que no hay un enfoque único para el aprendizaje, porque cada estudiante es especial y tiene talentos distintos.  Nuestra escuela se inspira en la teoría de las Inteligencias Múltiples de Howard Gardner, lo que significa que valoramos y cultivamos todas las formas en que nuestros estudiantes brillan.',
-      'texto2': 'Aquí está el texto del Botón 2.',
-      'texto3': 'Este texto pertenece al Botón 3.'
+      'texto1': 'Contribuir en el aprendizaje del liderazgo humano.',
+      'texto2': 'Ser un modelo educativo único e innovador, facilitador de múltiples experiencias.',
+      'texto3': 'Creativos (Co-crear), Vulnerables, Colaborativos (Dejar aparecer), Rentables (+Productividad/+Enfoque/+Energía), Auto conocimiento (Gestión), Plasticidad (Adaptable).'
   };
 
   function mostrarTexto(idTexto) {
