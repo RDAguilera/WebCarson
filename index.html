@@ -9,12 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">    
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap">
 </head>
 <body>
     <header>             
         <nav>
             <div class="logo">
-                <img src="Imagenes/Logo.jpg" alt="Logo de Carson">
+                <img src="Imagenes/LogoSinFondo.png" alt="Logo de Carson">
             </div>                                 
             <ul>
                 <li><a href="#">Inicio</a></li>
@@ -26,7 +27,7 @@
     </header>
     <section class="hero">
         <div class="container">
-            <h1>INSTITUTO PRIVADO CARSON</h1>
+            <h1>CARSON</h1>
             <p>Un nuevo paradigma educativo</p>
             <p>"Creemos y creamos una educación responsable"</p>                                              
         </div>
@@ -36,7 +37,8 @@
             <div class="column left-column">
                 <img src="Imagenes/Alumnos.jpg" alt="Alumnos en el aula de la instiución con una lupa">
             </div>        
-            <div class="column right-column">            
+            <div class="column right-column">
+                <h1 class="subtitulos">SOMOS CARSON</h1>           
                 <button class="seleccionado" onclick="mostrarTexto('texto1')">VISIÓN</button>
                 <button class="seleccionado" onclick="mostrarTexto('texto2')">MISIÓN</button>
                 <button class="seleccionado" onclick="mostrarTexto('texto3')">VALORES</button>
@@ -49,12 +51,19 @@
     </section>
     <section class="inferiror">
         <div class="containerInferior">
-            <h1>Súmate a nuestra comunidad</h1>
-            <button><a href="https://docs.google.com/forms/d/1U7feWVkIdX-ixNPdV0q-OiGF4UnJWXJSY31lcI0L_Oo/viewform?edit_requested=true" target="_blank">INSCRÍBETE</a></button>
+            <h1 class="otrosSubtitulos">Nuestros Pilares*</h1>            
+            <img src="Imagenes/PilaresT.png" alt="Nuestros pilares">
+        </div>
+    </section>
+    <section class="inferiror">
+        <div class="containerInferior">
+            <h1 class="otrosSubtitulos">Súmate a nuestra comunidad</h1>
+            <p id="pOSubT">Se parte del nuevo paradigma educativo desarrollador de múltiples inteligencias.</p>
+            <button id="btnSuscribete"><a href="https://docs.google.com/forms/d/1U7feWVkIdX-ixNPdV0q-OiGF4UnJWXJSY31lcI0L_Oo/viewform?edit_requested=true" target="_blank" style="text-decoration: none;">INSCRÍBETE</a></button>
         </div>
     </section>
     <!-- Más secciones aquí -->
-    <footer>
+    <footer class="Pie">
         <p>&copy; 2023 CE Centro Educativo Carson. Diseñado por RDA para Sanba Software</p>
     </footer>
     <script src="script.js"></script>

@@ -9,22 +9,24 @@
   }
 * Estilos generales */
 body {
-    font-family:'Arial Black', sans-serif;
+    font-family: 'Open sans' , Helvetica , Georgia;
     margin: 0;
     padding: 0;
-    display: flex;    
+    display: flex;
+    background-color:var(--cremita);     
 }
 
 .Conteinercolumn {
     display: flex;
     width: 100%; /* Ajusta el ancho de la página */
     background-color:var(--cremita); /* Cremita */  
-    border-top:solid var(--naranja);      
+    border-top:solid var(--naranja);
+    font-family: 'Open sans' , Helvetica , Georgia;
 }
 
 .column {
     flex: 1;
-    padding-right: 20px;   
+    padding-right: 20px;       
 }
 
 .left-column {
@@ -91,8 +93,8 @@ nav a {
 }
 
 .logo img {
-    max-width: 15%;
-    max-height: 15%;
+    max-width: 26%;
+    max-height:26%;
     margin-left: 30px;
     margin-top: 8px;
     padding: 3px;    
@@ -115,9 +117,10 @@ nav a {
 }
 
 .hero h1 {
-    font-size: 2.5em; /* Tamaño del título */
-    margin-bottom: 20px; /* Espacio inferior del título */
-    font-family:'Open sans' , Helvetica , Georgia;
+    font-size: 4.5em; /* Tamaño del título */
+    margin-top: 5px; /* Espacio superior del título */
+    margin-bottom: 5px; /* Espacio inferior del título */
+    font-family:'Roboto', sans-serif , Helvetica , Georgia;
     font-weight:bold;
     color: var(--orange);
 }
@@ -130,15 +133,18 @@ nav a {
     color: var(--cremita);
 }
 
-footer{
+.Pie{
     background-color:var(--azul);
     height: 50px;
-    color: var(--orange);
+    color: var(--orange);    
 }
-
+.Pie p{
+    margin-top: 0;
+    padding: 16px;
+}
 button {
     padding: 12px 20px;
-    margin-top: 15%;
+    /*margin-top: 15%;*/
     cursor: pointer;    
     border-right: 4mm ridge rgba(232, 118, 31, 1);
     background-color: transparent;
@@ -157,7 +163,42 @@ button.seleccionado {
 #areaTexto{
     margin-top: 20px;
     padding: 20px;    
-    font-size: 'Open sans' , Helvetica , Georgia;
+    font-family: 'Open sans' , Helvetica , Georgia;
+    color: var(--azul);
+}
+
+#btnSuscribete{
+    margin-bottom: 15px;
+    margin-left: 15%;
+}
+
+.containerInferior{
+    background-color: var(--cremita);
+}
+
+.subtitulos{
+    color: var(--azul);
+    font-size: 30px;
+    margin-top:20%;
+    font-family:'Roboto', sans-serif , Helvetica , Georgia;
+    font-weight:bold;   
+}
+
+.otrosSubtitulos{
+    padding-top: 3%;    
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5%;
+    color: var(--azul);
+    font-size: 30px;    
+    font-family:'Roboto', sans-serif , Helvetica , Georgia;
+    font-weight:bold;   
+}
+
+#pOSubT{
+    margin-top: 5px;
+    margin-left: 8%;
+    font-family: 'Open sans' , Helvetica , Georgia;
     color: var(--azul);
 }
 
