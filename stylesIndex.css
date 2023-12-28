@@ -1,0 +1,221 @@
+
+/* Definir una variable CSS */
+:root {
+  --azul:rgb(49, 54, 116);
+  --naranja:rgb(232, 118, 31);
+  --cremita:rgb(243, 242, 225);
+  --orange:rgb(240, 225, 200);
+  --blanco:#ffff    
+}
+/* Estilos generales */
+body {
+  font-family: 'Open sans' , Helvetica , Georgia;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;    
+  background-color:var(--cremita);     
+}
+
+.Conteinercolumn {
+  display: flex;
+  width: 100%; /* Ajusta el ancho de la página */
+  background-color:var(--cremita); /* Cremita */  
+  border-top:solid var(--naranja);
+  font-family: 'Open sans' , Helvetica , Georgia;
+}
+
+.column {
+  flex: 1;
+  padding-right: 20px;       
+}
+
+.left-column {
+  text-align: center;
+  margin: 0;
+}
+
+.right-column {
+  text-align: justify;    
+}
+
+.Conteinercolumn img {
+  max-width: 100%;
+  height: auto;           
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;        
+}
+
+.container img{
+  max-width: 1200px;   
+}
+
+
+header {
+  background-color: rgba(49, 54, 116); /* Azul */
+  color: var(--naranja);
+  /*padding: 5px 0;*/    
+  z-index: 1000; /* Puedes ajustar este valor según sea necesario */           
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  /*padding: 0.5rem 0;*/
+  align-items: center;
+  position: fixed;
+  z-index: 1000; /* Puedes ajustar este valor según sea necesario */
+  border-bottom: solid var(--orange);
+  background-color: rgba(49, 54, 116, 0.5); /* Azul */
+  left:1%;
+  right: 1%;
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;  /* alinea los elementos del menú en la misma línea */
+}
+
+nav ul li {
+  margin-right: 20px;
+  white-space: nowrap;  /* Evita el salto de línea en el texto */    
+}
+
+nav a {
+  color: var(--orange);
+  font-family: 'Open sans' , Helvetica , Georgia;
+  text-decoration: none;
+}
+
+.logo img {
+  max-width: 26%;
+  max-height:26%;
+  margin-left: 30px;
+  margin-top: 8px;
+  padding: 3px;    
+}
+
+.hero {
+  position: relative;
+  background: url('Imagenes/Escuela.jpg') center/cover no-repeat; 
+  height: 400px; /* Ajusta la altura según tus necesidades */    
+  text-align: center;
+}
+
+.hero .container {
+  position: absolute;
+  right: 54%;
+  top: 40%;
+  background-color: rgba(49, 54, 116, 0.5); /* Azul con 50% de opacidad */
+  height: 200px;
+  transition: background-color 0.5s ease;
+}
+
+.hero h1 {
+  font-size: 4.5em; /* Tamaño del título */
+  margin-top: 5px; /* Espacio superior del título */
+  margin-bottom: 5px; /* Espacio inferior del título */
+  font-family:'Roboto', sans-serif , Helvetica , Georgia;
+  font-weight:bold;
+  color: var(--orange);
+}
+
+.hero p {
+  font-size: 1.5em; /* Tamaño del párrafo */
+  max-width: 600px; /* Ancho máximo del párrafo */
+  margin: 0 auto; /* Centrar el párrafo */
+  font-family:'Open sans' , Helvetica , Georgia;    
+  color: var(--cremita);
+}
+
+.Pie{
+  background-color:var(--azul);
+  height: 50px;
+  color: var(--orange);    
+}
+
+.Pie p{
+  margin-top: 0;
+  padding: 16px;
+}
+
+button {
+  padding: 12px 20px;
+  /*margin-top: 15%;*/
+  cursor: pointer;    
+  border-right: 4mm ridge rgba(232, 118, 31, 1);
+  background-color: transparent;
+  color:var(--azul); /* Color de texto para botones no seleccionados */
+  font-weight:bolder;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+button.seleccionado {
+  background-color: var(--azul);  /* Puedes personalizar el color de fondo */
+  color: var(--orange);  /* Puedes personalizar el color del texto */
+}
+
+#areaTexto{
+  margin-top: 20px;
+  padding: 20px;    
+  font-family: 'Open sans' , Helvetica , Georgia;
+  color: var(--azul);
+}
+
+#btnSuscribete{
+  margin-bottom: 15px;
+  margin-left: 15%;
+}
+
+.containerInferior{
+  background-color: var(--cremita);
+}
+
+.subtitulos{
+  color: var(--azul);
+  font-size: 30px;
+  margin-top:20%;
+  font-family:'Roboto', sans-serif , Helvetica , Georgia;
+  font-weight:bold;   
+}
+
+.otrosSubtitulos{
+  padding-top: 3%;    
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 5%;
+  color: var(--azul);
+  font-size: 30px;    
+  font-family:'Roboto', sans-serif , Helvetica , Georgia;
+  font-weight:bold;   
+}
+
+#pOSubT{
+  margin-top: 5px;
+  margin-left: 8%;
+  font-family: 'Open sans' , Helvetica , Georgia;
+  color: var(--azul);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  header {
+      text-align: center;
+  }
+
+  nav ul {
+      text-align: center;
+  }
+
+  nav ul li {
+      display: block;
+      margin-bottom: 10px;
+  }
+}

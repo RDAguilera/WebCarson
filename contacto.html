@@ -3,54 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página con Dos Columnas</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .container {
-            display: flex;
-            width: 80%; /* Ajusta el ancho de la página según tus necesidades */
-        }
-
-        .column {
-            flex: 1;
-            padding: 20px;
-        }
-
-        .left-column {
-            text-align: center;
-        }
-
-        .right-column {
-            text-align: justify;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="stylesContacto.css">
+    <title>Contactos - Instituto Carson</title>            
 </head>
 <body>
-
-<div class="container">
-    <div class="column left-column">
-        <img src="https://scontent.fcor4-1.fna.fbcdn.net/v/t39.30808-6/346279535_608611371321925_2614596696445618796_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeGTAZrm48pYX-R2IwP7xklQJrMHDMb3q8ImswcMxverwg3zfdm-5Ivk73jeJJjyWlA&_nc_ohc=cE7002zoMXUAX_rw2Pc&_nc_ht=scontent.fcor4-1.fna&oh=00_AfAUfCpU7IKxotQgpMawZYP0Xw9SuzcaHfHwH7ky2ZzFIA&oe=658565D9" alt="Alumnos en el patio de la instiución">
+    <header>             
+        <nav>
+            <div class="logo">
+                <img src="Imagenes/LogoSinFondo.png" alt="Logo de Carson">
+            </div>                                 
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ofertaEdu.html">Oferta Educativa</a></li>
+                <li><a href="fundacion.html">Fundación</a></li>
+                <li><a href="equipo.html">Equipo Docente</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>Esperamos tu contacto</h1>            
+        </div>
+    </section>
+    <section class="central"></section>
+    <div class="container">
+        <div class="column left-column">
+            <img src="Imagenes/contactos.png" alt="Iconos con datos de contacto">
+        </div>
+        <div class="column right-column">
+            <p>
+                Pagina en desarrollo
+            </p>
+        </div>
     </div>
-    <div class="column right-column">
-        <p>
-            Tu texto va aquí. Puedes escribir varias líneas y el texto se justificará automáticamente en esta columna.
-        </p>
-    </div>
-</div>
-
+    <footer class="Pie">
+        <p>&copy; 2023 CE Centro Educativo Carson. Diseñado por RDA para Sanba Software</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -10,9 +10,9 @@
 /* Estilos generales */
 body {
     font-family: 'Open sans' , Helvetica , Georgia;
-    margin: 0;
-    padding: 0;
-    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;    
     background-color:var(--cremita);     
 }
 
@@ -109,8 +109,8 @@ nav a {
 
 .hero .container {
     position: absolute;
-    right: 54%;
-    top: 40%;
+    /*right: 54%;*/
+    top: 27%;
     background-color: rgba(49, 54, 116, 0.5); /* Azul con 50% de opacidad */
     height: 200px;
     transition: background-color 0.5s ease;
