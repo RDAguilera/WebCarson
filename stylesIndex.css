@@ -20,7 +20,6 @@ body {
   display: flex;
   width: 100%; /* Ajusta el ancho de la página */
   background-color:var(--cremita); /* Cremita */  
-  border-top:solid var(--naranja);
   font-family: 'Open sans' , Helvetica , Georgia;
 }
 
@@ -40,7 +39,10 @@ body {
 
 .Conteinercolumn img {
   max-width: 100%;
-  height: auto;           
+  height: auto;
+  border-top-right-radius: 2%;
+  border-bottom-right-radius: 2%;
+  margin-top: 5px;       
 }
 
 .container {
@@ -102,9 +104,17 @@ nav a {
 
 .hero {
   position: relative;
-  background: url('Imagenes/Escuela.jpg') center/cover no-repeat; 
+  background: url('Imagenes/InicioWeb.jpg') center/cover no-repeat; 
   height: 400px; /* Ajusta la altura según tus necesidades */    
   text-align: center;
+  overflow: hidden;   
+}
+
+.hero img {
+  width: auto;
+  height:auto;
+  object-fit:cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+  display: block;
 }
 
 .hero .container {
@@ -145,8 +155,7 @@ nav a {
 }
 
 button {
-  padding: 12px 20px;
-  /*margin-top: 15%;*/
+  padding: 12px 20px;  
   cursor: pointer;    
   border-right: 4mm ridge rgba(232, 118, 31, 1);
   background-color: transparent;
@@ -154,7 +163,7 @@ button {
   font-weight:bolder;
   border-top: none;
   border-left: none;
-  border-bottom: none;
+  border-bottom: none;  
 }
 
 button.seleccionado {
@@ -203,6 +212,52 @@ button.seleccionado {
   font-family: 'Open sans' , Helvetica , Georgia;
   color: var(--azul);
 }
+
+/*---Popup----*/
+#popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#popup-content {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup-overlay {
+  position: relative;
+  text-align: center; /* Centra el contenido */
+}
+
+.popup-overlay img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.popup-overlay a, .popup-overlay button {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #007BFF;
+  font-size: 18px;
+  font-weight: bold;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.popup-overlay button {
+  margin-left: 10px; /* Agrega espacio entre el enlace y el botón */
+}
+
+/*----Fin Popup----*/
 
 /* Estilos responsivos */
 @media (max-width: 768px) {

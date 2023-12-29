@@ -49,3 +49,38 @@ window.addEventListener('scroll', function() {
         container.style.backgroundColor = 'rgba(49, 54, 116, ' + opacity + ')';
     }
 });
+
+//Popup
+document.addEventListener("DOMContentLoaded", function() {
+    var popupContainer = document.getElementById("popup-container");
+    var closePopupButton = document.getElementById("close-popup");
+    var inscripcionLink = document.getElementById("enlace-inscripcion");
+
+    // Abre el popup al cargar la página
+    setTimeout(function() {
+        popupContainer.style.display = "block";
+    }, 1000);
+
+    // Cierra el popup al hacer clic en el botón de cerrar
+    closePopupButton.addEventListener("click", function() {
+        popupContainer.style.display = "none";
+    });
+
+    // Cierra el popup y lleva a la sección al hacer clic en "Inscríbete"
+    inscripcionLink.addEventListener("click", function(event) {
+        event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+        popupContainer.style.display = "none";
+
+        // Obtiene el destino del enlace y desplaza la ventana a esa sección
+        var targetId = this.getAttribute("href").substring(1); // Elimina el '#'
+        var targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: "smooth" // Desplazamiento suave
+            });
+        }
+    });
+});
+
+

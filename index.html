@@ -25,21 +25,20 @@
             </ul>
         </nav>        
     </header>
-    <section class="hero">
+    <div class="hero">
         <div class="container">
             <h1>CARSON</h1>
             <p>Un nuevo paradigma educativo</p>
-            <p>"Creemos y creamos una educación responsable"</p>
-            <!--<img src="Imagenes/Escuela.jpg" alt="Foto del establecimiento">-->
+            <p>"Creemos y creamos una educación responsable"</p>            
         </div>
-    </section> 
+    </div> 
     <section class="central">
         <div class="Conteinercolumn">
             <div class="column left-column">
                 <img src="Imagenes/Alumnos.jpg" alt="Alumnos en el aula de la institución con una lupa">
             </div>        
             <div class="column right-column">
-                <h1 class="subtitulos">SOMOS CARSON</h1>           
+                <h1 class="subtitulos">Somos Carson</h1>           
                 <button class="seleccionado" onclick="mostrarTexto('texto1')">VISIÓN</button>
                 <button class="seleccionado" onclick="mostrarTexto('texto2')">MISIÓN</button>
                 <button class="seleccionado" onclick="mostrarTexto('texto3')">VALORES</button>
@@ -56,7 +55,7 @@
             <img src="Imagenes/PilaresT.png" alt="Nuestros pilares">
         </div>
     </section>
-    <section class="Inferior">
+    <section class="Inferior" id="inscribete">
         <div class="containerInferior">
             <h1 class="otrosSubtitulos">Súmate a nuestra comunidad</h1>
             <p id="pOSubT">Sé parte del nuevo paradigma educativo desarrollador de múltiples inteligencias.</p>
@@ -72,5 +71,17 @@
         // Llamada inicial para mostrar el texto del botón predeterminado
         mostrarTexto('texto1');
     </script>
+
+    <!--Popup-->
+    <div id="popup-container">
+        <div id="popup-content">
+            <img src="Imagenes/FlayerInscripciones.png" alt="Imagen Popup">
+            <div class="popup-overlay">
+                <a href="#inscribete" id="enlace-inscripcion">Inscríbete</a>
+                <button id="close-popup">Cerrar</button>
+            </div>                       
+        </div>
+    </div>
+
 </body>
 </html>
