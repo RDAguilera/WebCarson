@@ -15,7 +15,12 @@
         <nav>
             <div class="logo">
                 <img src="Imagenes/LogoSinFondo.png" alt="Logo de Carson">
-            </div>                                 
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>                                    
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="ofertaEdu.html">Oferta Educativa</a></li>
@@ -34,9 +39,7 @@
     </div> 
     <section class="central">
         <div class="Conteinercolumn">
-            <div class="column left-column">
-                <img src="Imagenes/Alumnos.jpg" alt="Alumnos en el aula de la institución con una lupa">
-            </div>        
+                   
             <div class="column right-column">
                 <h1 class="subtitulos">Somos Carson</h1>           
                 <button class="seleccionado" onclick="mostrarTexto('texto1')">VISIÓN</button>
@@ -46,13 +49,17 @@
                 <div id="areaTexto">
                     <!-- El texto seleccionado se mostrará aquí -->
                 </div>
+            </div>
+            <div class="column left-column">
+                <img src="Imagenes/Alumnos.jpg" alt="Alumnos en el aula de la institución con una lupa">
             </div>            
         </div>
     </section>
     <section class="Inferior">
         <div class="containerInferior">
             <h1 class="otrosSubtitulos">Nuestros Pilares*</h1>            
-            <img src="Imagenes/PilaresT.png" alt="Nuestros pilares">
+            <img class="desktop-image" src="Imagenes/PilaresT.png" alt="Nuestros pilares">
+            <img class="mobile-image" src="Imagenes/PilaresVertical.png" alt="Nuestros pilares">
         </div>
     </section>
     <section class="Inferior" id="inscribete">
@@ -82,6 +89,6 @@
             </div>                       
         </div>
     </div>
-
+    <!--Popup-->
 </body>
 </html>

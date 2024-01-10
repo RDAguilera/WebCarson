@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
         popupContainer.style.display = "none";
 
         // Obtiene el destino del enlace y desplaza la ventana a esa sección
-        var targetId = this.getAttribute("href").substring(1); // Elimina el '#'
+        var targetId = this.getAttribute("href").substring(1);
         var targetElement = document.getElementById(targetId);
 
         if (targetElement) {
@@ -82,5 +82,15 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const mobileMenuToggle = document.getElementById('mobile-menu');
+    const navList = document.querySelector('nav ul');
+
+    mobileMenuToggle.addEventListener('click', function () {
+        navList.classList.toggle('show');
+    });
+});
+
 
 
