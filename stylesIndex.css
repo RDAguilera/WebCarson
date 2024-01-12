@@ -276,7 +276,7 @@ button.seleccionado {
 /*----Fin Popup----*/
 
 /* Estilos responsivos */
-@media (max-width: 568px) {
+@media (max-width: 768px) {
  
   /*---Menú Movil---*/
   .nav-list {
@@ -331,7 +331,7 @@ button.seleccionado {
   /*---Fin Menú Movil---*/
 
   .hero .container{
-    top:30%;
+    /*top:30%;*/
     height: 250px;
     right: 0%;
   }
