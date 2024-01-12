@@ -16,12 +16,12 @@
             <div class="logo">
                 <img src="Imagenes/LogoSinFondo.png" alt="Logo de Carson">
             </div>
-            <div class="menu-toggle" id="mobile-menu">
+            <div class="menu-toggle" id="_toggle">
                 <span></span>
                 <span></span>
-                <span></span>
+                <span></span>                
             </div>                                    
-            <ul>
+            <ul class="nav-list" id="_items">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="ofertaEdu.html">Oferta Educativa</a></li>
                 <li><a href="fundacion.html">Fundación</a></li>
@@ -38,8 +38,7 @@
         </div>
     </div> 
     <section class="central">
-        <div class="Conteinercolumn">
-                   
+        <div class="Conteinercolumn">                   
             <div class="column right-column">
                 <h1 class="subtitulos">Somos Carson</h1>           
                 <button class="seleccionado" onclick="mostrarTexto('texto1')">VISIÓN</button>
@@ -82,13 +81,14 @@
     <!--Popup-->
     <div id="popup-container">
         <div id="popup-content">
-            <img src="Imagenes/FlayerInscripciones.png" alt="Imagen Popup">
+            <img class="desktop-image" src="Imagenes/FlayerInscripciones.png" alt="Imagen Popup">
+            <img class="mobile-image" src="Imagenes/FlayerInscripcionesMovil.png" alt="Imagen Popup">
             <div class="popup-overlay">
                 <a href="#inscribete" id="enlace-inscripcion">Inscríbete</a>
                 <button id="close-popup">Cerrar</button>
             </div>                       
         </div>
     </div>
-    <!--Popup-->
+    <!--Popup-->    
 </body>
 </html>

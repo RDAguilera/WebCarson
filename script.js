@@ -83,14 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const mobileMenuToggle = document.getElementById('mobile-menu');
-    const navList = document.querySelector('nav ul');
-
-    mobileMenuToggle.addEventListener('click', function () {
-        navList.classList.toggle('show');
-    });
-});
-
-
-
+_toggle.onclick = () =>{
+    _items.classList.toggle("open")
+_toggle.classList.toggle("close")
+};

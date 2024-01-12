@@ -9,11 +9,12 @@
 }
 /* Estilos generales */
 body {
-  font-family: 'Open sans' , Helvetica , Georgia;
+  font-family: 'Open sans' , Helvetica , Georgia;  
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;    
-  background-color:var(--cremita);     
+  background-color:var(--cremita);
+
 }
 
 .Conteinercolumn {
@@ -57,31 +58,16 @@ body {
   max-width: 1200px;   
 }
 
-
 header {
   background-color: rgba(49, 54, 116); /* Azul */
-  color: var(--naranja);
-  /*padding: 5px 0;*/    
-  z-index: 1000; /* Puedes ajustar este valor según sea necesario */           
+  color: var(--naranja);      
+  z-index: 1000; /* Se Puede ajustar este valor según sea necesario */           
 }
 
-.menu-toggle {
-  cursor: pointer;
-  display: none;
-}
-
-.menu-toggle span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px 0;
-}
-
+/*---Inicio Menu Escritorio-----*/
 nav {
   display: flex;
-  justify-content: space-between;
-  /*padding: 0.5rem 0;*/
+  justify-content: space-between;  
   align-items: center;
   position: fixed;
   z-index: 1000; /* Puedes ajustar este valor según sea necesario */
@@ -91,21 +77,28 @@ nav {
   right: 1%;
 }
 
-
 nav ul {
   list-style: none;
   padding: 0;
   display: flex;  /* alinea los elementos del menú en la misma línea */
 }
 
-nav ul li {
-  margin-right: 20px;
+nav ul li {  
   white-space: nowrap;  /* Evita el salto de línea en el texto */    
 }
 
-nav a {
+.nav-list {
+  list-style: none;
+  display: flex;  
+}
+
+.nav-list li {
+ margin-right: 20px;
+}
+
+.nav-list a {
   color: var(--orange);
-  font-family: 'Open sans' , Helvetica , Georgia;
+  font-family: 'Roboto','Open sans' , Helvetica , Georgia;
   text-decoration: none;
 }
 
@@ -116,6 +109,7 @@ nav a {
   margin-top: 8px;
   padding: 3px;    
 }
+/*---Fin Menu Escritorio-----*/
 
 .hero {
   position: relative;
@@ -279,46 +273,75 @@ button.seleccionado {
 .popup-overlay button {
   margin-left: 10px; /* Agrega espacio entre el enlace y el botón */
 }
-
 /*----Fin Popup----*/
 
 /* Estilos responsivos */
-@media (max-width: 768px) {
-  header {
-    text-align: center;
-}
-
-.menu-toggle {
-    display: block;
-}
-
-nav {
-    display: none;
-    flex-direction: column;
+@media (max-width: 568px) {
+ 
+  /*---Menú Movil---*/
+  .nav-list {
     position: absolute;
-    top: 60px;
+    top: 58px;
     left: 0;
+    flex-direction: column;
+    background-color: var(--azul);
     width: 100%;
-    background-color: rgba(49, 54, 116, 0.5);
-}
-
-nav.show {
-    display: flex;
-}
-
-.logo img {
-    margin-left: 0;
-    margin-right: 0;
-}
-  .hero .container{
-   top:32%;
-   height: 250px;
-   right: 0%;
+    height:100vh;
+    text-align: end;      
+    transform: translateX(-105%);
+    transition: 0.8s ease all; /* Agrega una transición para suavizar la transformación */
   }
+
+  .menu-toggle {
+    display: flex !important;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 15px; 
+  }
+
+  .menu-toggle span {
+    display: block;
+    height: 4px;
+    width: 30px;
+    background-color: var(--cremita);
+    margin-bottom: 5px;
+    border-radius: 2px;  
+    transform-origin: 5px 0px;
+    transition: all 0.3s linear; /* Agrega una transición para suavizar la transformación */
+  }
+
+  .close span {
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+
+  .close span:nth-child(2){
+    display: none;
+  }
+
+  .close span:nth-child(3){
+    transform: rotate(-45deg) translate(-5px, 1px);
+  }
+
+  .open{ transform: translateX(0) !important;}
 
   .logo img{
     margin-left: 0;
     margin-right: 60%;
+  }
+  /*---Fin Menú Movil---*/
+
+  .hero .container{
+    top:30%;
+    height: 250px;
+    right: 0%;
+  }
+
+  .hero h1{
+    font-size: 35px;
+  }
+
+  .hero p{
+    font-size: 15px;
   }
 
   .desktop-image {
@@ -328,6 +351,7 @@ nav.show {
   .mobile-image {
     display: block;
     margin-left: 15%;
+    max-width: 450px;
   }
 
   .Conteinercolumn {
@@ -336,6 +360,7 @@ nav.show {
     background-color:var(--cremita); /* Cremita */  
     font-family: 'Open sans' , Helvetica , Georgia;
   }
+
 
   .subtitulos{
     color: var(--azul);
@@ -371,23 +396,21 @@ nav.show {
     margin-top: 15px;
     text-decoration: none;
     color: #007BFF;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
     background: #fff;
-    padding: 10px 20px;
+    padding: 10px 5px;
     border-radius: 5px;
+    margin-left: 1.3rem;
   }
 
   #popup-content img {
-    max-width: 180%;
-    border-radius: 20px;
+    max-width: 80%;
+    border-radius: 20px;    
   }
 
   #popup-content {
-    position: absolute;
-    
-    
-    transform: translate(-50%, -50%);  
+    position: relative;    
+    transform: translate(-50%, -50%);    
   }
-
 }
