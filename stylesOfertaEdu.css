@@ -110,6 +110,7 @@ nav ul {
   border-bottom-left-radius: 3%;  
 }
 
+
 /* Estilos responsivos */
 @media (max-width: 768px) {
  
@@ -168,15 +169,19 @@ nav ul {
   .Oferta{   
     padding-top: 35%;
     flex-direction: column;
+  } 
+  .titulo{
+    padding-top: 0;
+    padding-bottom: 0;
   }
-  
+  .ContainerOfertaEdu{
+    margin-top: 0;
+  }
+
   .imagenOFED img{
-    max-width: 580px;
+    max-width: 320px;
     border-top-right-radius: 3%;     
     border-bottom-right-radius: 3%;
   }
-
-  .imagenOFED{
-    margin-left: 20px;
-  }
+ 
 }
