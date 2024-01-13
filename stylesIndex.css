@@ -281,7 +281,7 @@ button.seleccionado {
   /*---Menú Movil---*/
   .nav-list {
     position: absolute;
-    top: 92px;
+    top: 85%;
     left: 0;
     flex-direction: column;
     background-color: var(--azul);

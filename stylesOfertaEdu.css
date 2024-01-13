@@ -1,0 +1,182 @@
+/* Definir una variable CSS */
+:root {
+  --azul:rgb(49, 54, 116);
+  --naranja:rgb(232, 118, 31);
+  --cremita:rgb(243, 242, 225);
+  --orange:rgb(240, 225, 200);
+  --blanco:#ffff    
+}
+/* Estilos generales */
+body {  
+  font-family: 'Open sans' , Helvetica , Georgia;  
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;    
+  background-color:var(--cremita);
+}
+
+header {
+  background-color: rgba(49, 54, 116); /* Azul */
+  color: var(--naranja);      
+  z-index: 1000; /* Se Puede ajustar este valor según sea necesario */  
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  position: fixed;
+  z-index: 1000; /* Puedes ajustar este valor según sea necesario */
+  border-bottom: solid var(--orange);
+  background-color: rgba(49, 54, 116, 0.5); /* Azul */
+  left:1%;
+  right: 1%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;  /* alinea los elementos del menú en la misma línea */
+}
+
+.logo img {
+  max-width: 26%;
+  max-height:26%;
+  margin-left: 30px;
+  margin-top: 8px;
+  padding: 3px;    
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin-right: 20px;  
+}
+
+.nav-list li a{
+  color: var(--orange);
+  font-family: 'Roboto','Open sans' , Helvetica , Georgia;
+  text-decoration: none;
+}
+
+/*---Fin Menu Escritorio-----*/
+
+.Oferta{
+  display: flex;
+  padding-top: 15%;    
+}
+
+.ContainerOfertaEdu{   
+  background-color: var(--azul);
+  margin-top:10px;
+  padding: 20px;
+  border-radius: 3%;
+  max-width: 800px;       
+}
+
+.titulo{  
+  padding: 30px;
+  color: var(--azul);
+  font-size: 20px;  
+  font-family:'Roboto', sans-serif , Helvetica , Georgia;
+  font-weight:bold;
+}
+
+.OfertaEdu{    
+  color: var(--orange);
+  border-radius: 3%;
+  max-width: 500px;
+  padding: 20px;  
+}
+
+#hacemos{
+ color: var(--naranja);
+ font-size: 20px;
+}
+
+.imagenOFED{  
+  padding-top: 10px;
+  padding-left: 10px;  
+}
+
+.imagenOFED img{
+  max-width: 380px;
+  border-top-left-radius: 3%;
+  border-bottom-left-radius: 3%;  
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+ 
+  /*---Menú Movil---*/
+  .nav-list {
+    position: absolute;
+    top: 95%;
+    left: 0;
+    flex-direction: column;
+    background-color: var(--azul);
+    width: 100%;
+    height:100vh;
+    text-align: end;      
+    transform: translateX(-105%);
+    transition: 0.8s ease all; /* Agrega una transición para suavizar la transformación */
+  }
+
+  .menu-toggle {
+    display: flex !important;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 15px; 
+  }
+
+  .menu-toggle span {
+    display: block;
+    height: 4px;
+    width: 30px;
+    background-color: var(--cremita);
+    margin-bottom: 5px;
+    border-radius: 2px;  
+    transform-origin: 5px 0px;
+    transition: all 0.3s linear; /* Agrega una transición para suavizar la transformación */
+  }
+
+  .close span {
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+
+  .close span:nth-child(2){
+    display: none;
+  }
+
+  .close span:nth-child(3){
+    transform: rotate(-45deg) translate(-5px, 1px);
+  }
+
+  .open{ transform: translateX(0) !important;}
+
+  .logo img{
+    margin-left: 0;
+    margin-right: 60%;
+  }
+  /*---Fin Menú Movil---*/
+
+  .Oferta{   
+    padding-top: 35%;
+    flex-direction: column;
+  }
+  
+  .imagenOFED img{
+    max-width: 580px;
+    border-top-right-radius: 3%;     
+    border-bottom-right-radius: 3%;
+  }
+
+  .imagenOFED{
+    margin-left: 20px;
+  }
+}

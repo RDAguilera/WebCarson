@@ -3,33 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="stylesOfertaEdu.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap">
   <title>Oferta Educativa - Instituto Carson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
   <header>             
     <nav>
         <div class="logo">
             <img src="Imagenes/LogoSinFondo.png" alt="Logo de Carson">
-        </div>                                 
-        <ul>
+        </div>
+        <div class="menu-toggle" id="_toggle">
+            <span></span>
+            <span></span>
+            <span></span>                
+        </div>                                    
+        <ul class="nav-list" id="_items">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="ofertaEdu.html">Oferta Educativa</a></li>
             <li><a href="fundacion.html">Fundación</a></li>
             <li><a href="equipo.html">Equipo Docente</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
-    </nav>            
-  </header>
+    </nav>        
+</header>
   <main>
-    <section>
-      <div>
-        <img src="Imagenes/AlumnosInicio.jpg" alt="Logo de Carson">
-      </div>
+    <section class="Oferta">
+      <div class="titulo">
+        <h1>Oferta Educativa</h1>
+      </div>      
+        <div class="ContainerOfertaEdu">
+          <div class="OfertaEdu">
+            <p id="hacemos">Lo que hacemos...</p>
+            <p>
+              Brindamos educación integral enmarcada por el contenido 
+              curricular formal y obligatorio del Ministerio de Educación 
+              de la Provincia de Córdoba, garantizando a los estudiantes 
+              calidad con inclusión educativa.
+            </p>
+            <p>Nivel Inicial y Nivel Primario</p>
+            <p>Proyecto Secundario 2024</p>
+          </div>
+        </div>
+        <div class="imagenOFED">
+          <img src="Imagenes/ImgOfertaEducativa.png" alt="Alumnos en fila saliendo al patio">
+        </div>      
     </section>
-  </main>
-  <p style="margin-left: 20px;">
-    Página en desarrollo
-  </p>
+    <section class="Metodologia">
+      <div class="contentMetodologia">
+        <div>Verbal</div>
+        <div>Visual-Espacial</div>
+        <div>Musical</div>
+        <div>Lógico Matemática</div>
+        <div>Interpersonal</div>
+        <div>Naturista</div>
+        <div>Intrapersonal</div>
+        <div>Cinética Corporal</div>
+      </div>
+    </section>   
+  </main>    
+  <script>
+    _toggle.onclick = () =>{
+       _items.classList.toggle("open")
+      _toggle.classList.toggle("close")
+    }
+  </script> 
 </body>
 </html>

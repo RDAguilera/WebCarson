@@ -85,5 +85,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
 _toggle.onclick = () =>{
     _items.classList.toggle("open")
-_toggle.classList.toggle("close")
+    _toggle.classList.toggle("close")
 };
