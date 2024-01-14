@@ -4,7 +4,11 @@
   --naranja:rgb(232, 118, 31);
   --cremita:rgb(243, 242, 225);
   --orange:rgb(240, 225, 200);
-  --blanco:#ffff    
+  --blanco:#ffff;
+  --celeste: rgb(0, 104, 157);
+  --verde:rgb(102, 147, 54);
+  --gris:rgb(66, 70, 81);
+
 }
 /* Estilos generales */
 body {  
@@ -110,6 +114,101 @@ nav ul {
   border-bottom-left-radius: 3%;  
 }
 
+.titulo2 h1{
+  margin-bottom: 0;
+}
+.titulo2, .titulo3{
+  padding-left: 30px; 
+  color: var(--azul);
+  font-size: 20px;  
+  font-family:'Roboto', sans-serif , Helvetica , Georgia;
+  font-weight:bold;
+}
+.titulo3 h1{
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.contentInteligencias{
+  display: flex;
+  padding: 10px;    
+  justify-content:space-around;
+  flex-wrap:wrap;  
+  width: 95%;  
+  margin: 0 auto;
+}
+
+.cajaInteligencia{  
+  padding: 10px;
+  margin: 5px;
+  font-family:'Roboto', sans-serif , Helvetica , Georgia;      
+}
+
+#verbal{
+  background-color: var(--verde);
+  color: var(--cremita);  
+  border-radius: 3%;
+  width: 200px;
+  height: 200px;
+}
+
+#visual{
+  background-color: var(--naranja);
+  color: var(--cremita);
+  border-radius: 3%;
+  width: 200px;
+  height: 140px;
+}
+
+#musical{
+  background-color: var(--azul);
+  color: var(--cremita);
+  border-radius: 3%;
+  width: 200px;
+  height: 170px; 
+}
+
+#logico{
+  background-color: var(--gris);
+  color: var(--cremita);
+  border-radius: 3%;
+  width: 200px;
+  height: 200px;
+  order: 7;
+}
+
+#inter{
+  background-color: var(--celeste);
+  color: var(--cremita);
+  border-radius: 3%;
+  width: 200px;
+  height: 200px;
+}
+
+#intra{
+  background-color: var(--azul);
+  color: var(--cremita);
+  border-radius: 3%;
+  width: 200px;
+  height: 200px;
+}
+
+#naturalista{
+  background-color: var(--verde);
+  color: var(--cremita);
+  border-radius: 3%;
+  width: 200px;
+  height: 200px;
+  order: 8;
+}
+
+#cinetica{
+  background-color: var(--naranja);
+  color: var(--cremita);
+  border-radius: 3%;
+  width: 200px;
+  height: 200px;  
+}
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
