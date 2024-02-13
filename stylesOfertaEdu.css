@@ -92,15 +92,9 @@ nav ul {
 }
 
 .OfertaEdu{    
-  color: var(--orange);
-  border-radius: 3%;
+  color: var(--orange);  
   max-width: 500px;
   padding: 20px;  
-}
-
-#hacemos{
- color: var(--naranja);
- font-size: 20px;
 }
 
 .imagenOFED{  
@@ -120,7 +114,7 @@ nav ul {
 .titulo2, .titulo3{
   padding-left: 30px; 
   color: var(--azul);
-  font-size: 20px;  
+  font-size: 45px;  
   font-family:'Roboto', sans-serif , Helvetica , Georgia;
   font-weight:bold;
 }
@@ -128,6 +122,43 @@ nav ul {
   margin-top: 0;
   margin-bottom: 5px;
 }
+/* Estilos generales */
+
+
+/* Inicio Estilos Metodología */
+.Metodologia {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.ContainerMetodologia {
+  flex: 1;  
+  background-color: var(--gris);
+  margin-top:10px;
+  padding: 20px;
+  border-top-left-radius: 3%;  
+  max-width: 800px;  
+}
+
+/* Estilos para el párrafo */
+.p_metodologia p {  
+  color: var(--blanco);
+  line-height: 1.5;
+  max-width: 650px;
+  height: 200px;
+  padding: 20px;
+}
+
+.imagenMet img{
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  margin-left: 20%;
+}
+/* Fin Estilos Metodología */
 
 .contentInteligencias{
   display: flex;
@@ -138,6 +169,13 @@ nav ul {
   margin: 0 auto;
 }
 
+.refTitulo {
+  padding-left: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 150px;
+  color: var(--gris);
+}
 .cajaInteligencia{  
   padding: 10px;
   margin: 5px;
@@ -208,6 +246,17 @@ nav ul {
   border-radius: 3%;
   width: 200px;
   height: 200px;  
+}
+
+.Pie{
+  background-color:var(--azul);
+  height: 50px;
+  color: var(--orange);    
+}
+
+.Pie p{
+  margin-top: 0;
+  padding: 16px;
 }
 
 /* Estilos responsivos */
@@ -282,5 +331,52 @@ nav ul {
     border-top-right-radius: 3%;     
     border-bottom-right-radius: 3%;
   }
- 
+
+  .Metodologia {
+    flex-direction: column;
+    position: relative;
+  }
+  #met{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin-left:0.5em;
+    color: var(--blanco);
+  }
+
+  .ContainerMetodologia {     
+    height: 550px;
+    width: auto;
+  } 
+
+  /* Estilos para el párrafo */
+  .p_metodologia p {  
+    color: var(--blanco);           
+    padding: 20px;   
+  }
+  
+  .imagenMet img{
+    max-width: 250px;
+    margin-left: 20px;
+  }
+  /* Fin Estilos Metodología */
+  
+  .titulo2, .titulo3{
+    padding-left: 30px; 
+    color: var(--azul);
+    font-size: 25px;  
+    font-family:'Roboto', sans-serif , Helvetica , Georgia;
+    font-weight:bold;
+  }
+
+  .Pie{
+    background-color:var(--azul);
+    height: auto;
+    color: var(--orange); 
+  }
+  
+  .Pie p{
+    font-size: 10px;
+  }
 }

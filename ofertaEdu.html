@@ -24,8 +24,8 @@
         <ul class="nav-list" id="_items">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="ofertaEdu.html">Oferta Educativa</a></li>
-            <li><a href="fundacion.html">Fundación</a></li>
-            <li><a href="equipo.html">Equipo Docente</a></li>
+            <!--<li><a href="fundacion.html">Fundación</a></li>-->
+            <!--<li><a href="equipo.html">Equipo Docente</a></li>-->
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>        
@@ -33,28 +33,39 @@
   <main>
     <section class="Oferta">
       <div class="titulo">
-        <h1>Oferta Educativa</h1>
+        <div class="titulo2"><h1>Propuesta</h1></div>
+        <div class="titulo3"><h1>Educativa</h1></div>
       </div>      
         <div class="ContainerOfertaEdu">
-          <div class="OfertaEdu">
-            <p id="hacemos">Lo que hacemos...</p>
+          <div class="OfertaEdu">            
             <p>
-              Brindamos educación integral enmarcada por el contenido 
-              curricular formal y obligatorio del Ministerio de Educación 
-              de la Provincia de Córdoba, garantizando a los estudiantes 
-              calidad con inclusión educativa.
-            </p>
-            <p>Nivel Inicial y Nivel Primario</p>
-            <p>Proyecto Secundario 2024</p>
+              Nos enfocamos en preparar a los estudiantes para el dinámico mundo del mañana, combinando la currícula formal y obligatoria del Ministerio de Educación de la provincia de Córdoba con un enfoque en innovación, sostenibilidad y desarrollo personal, centrado en el autoconocimiento.
+            </p>            
           </div>
         </div>
         <div class="imagenOFED">
           <img src="Imagenes/ImgOfertaEducativa.png" alt="Alumnos en fila saliendo al patio">
         </div>      
     </section>
+    <section class="Metodologia">      
+      <div class="imagenMet">
+        <img src="Imagenes/metodologia.jpg" alt="Alumna Sonriendo, con el uniforme de la institución">        
+      </div>
+      <div class="SupraContainerMet">
+        <div class="titulo2" id="met"><h1>Metodología</h1></div>
+        <div class="ContainerMetodologia">        
+          <div class="p_metodologia">          
+            <p>
+              Nuestra metodología se centra en una educación holística y personalizada, promoviendo el aprendizaje basado en proyectos, la creatividad, y el pensamiento crítico. A través de la colaboración y el uso de tecnología avanzada, adaptamos la enseñanza a las necesidades individuales, fomentando la reflexión y la autoevaluación entre los estudiantes. Nos centramos en desarrollar competencias clave como la resolución de desafíos y la comunicación efectiva, en un entorno de respeto, afecto y confianza.
+            </p>          
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="Inteligencias">
       <div class="titulo2"><h1>Inteligencias</h1></div>
       <div class="titulo3"><h1>Multiples</h1></div>
+      <div class="refTitulo"><h5>(Howard Gardner)</h5></div>
       <div class="contentInteligencias">
         <div class="cajaInteligencia" id="verbal">
           <h3>Verbal</h3>
@@ -90,7 +101,10 @@
         </div>
       </div>
     </section>   
-  </main>    
+  </main>
+  <footer class="Pie">
+    <p>&copy; 2023 CE Centro Educativo Carson. Diseñado por RDA para Sanba Software</p>
+  </footer>    
   <script>
     _toggle.onclick = () =>{
        _items.classList.toggle("open")

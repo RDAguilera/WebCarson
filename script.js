@@ -1,8 +1,8 @@
 
   // Definir los textos asociados a cada botón
   var textos = {
-      'texto1': 'Contribuir en el aprendizaje del liderazgo humano.',
-      'texto2': 'Ser un modelo educativo único e innovador, facilitador de múltiples experiencias.',
+      'texto1': 'Somos un faro en educación consciente, nutrimos mentes y corazones a través del autoconocimiento, empoderando a cada ser humano para liderar con su máximo potencial en un mundo en constante cambio.',
+      'texto2': 'Formar líderes, educando múltiples ​inteligencias, cultivando mentes; para ​expandir consciencias',
       'texto3': 'Creativos (Co-crear), Vulnerables, Colaborativos (Dejar aparecer), Rentables (+Productividad/+Enfoque/+Energía), Auto conocimiento (Gestión), Plasticidad (Adaptable).'
   };
 
